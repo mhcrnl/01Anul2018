@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1473485729 source:/home/mhcrnl/Desktop/Year2016/September/Saturday10/Clibrary/Clibrary.c
+	"Clibrary.h"
+
+1473488280 /home/mhcrnl/Desktop/Year2016/September/Saturday10/Clibrary/Clibrary.h
+	<stdio.h>
+	<stdlib.h>
+
+1473487931 source:/home/mhcrnl/Desktop/Year2016/September/Saturday10/Clibrary/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Clibrary.h"
+

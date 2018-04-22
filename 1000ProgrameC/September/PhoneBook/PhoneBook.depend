@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1474196201 source:/home/mhcrnl/Desktop/Year2016/September/PhoneBook/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

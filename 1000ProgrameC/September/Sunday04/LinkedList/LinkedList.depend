@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1472983435 source:/home/mhcrnl/Desktop/Year2016/September/Sunday04/LinkedList/main.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"linkedlist.h"
+
+1472983366 /home/mhcrnl/Desktop/Year2016/September/Sunday04/LinkedList/linkedlist.h
+

@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1472720731 source:/home/mhcrnl/Desktop/Year2016/September/Sunday04/sds-master/sds.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<assert.h>
+	<limits.h>
+	"sds.h"
+	"sdsalloc.h"
+	<stdio.h>
+	"testhelp.h"
+	"limits.h"
+
+1472720731 /home/mhcrnl/Desktop/Year2016/September/Sunday04/sds-master/sds.h
+	<sys/types.h>
+	<stdarg.h>
+	<stdint.h>
+
+1472720731 /home/mhcrnl/Desktop/Year2016/September/Sunday04/sds-master/sdsalloc.h
+
+1472720731 /home/mhcrnl/Desktop/Year2016/September/Sunday04/sds-master/testhelp.h
+
