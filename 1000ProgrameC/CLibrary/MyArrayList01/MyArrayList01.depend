@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1474569855 source:/home/mhcrnl/Desktop/Year2016/October/CLibrary/MyArrayList01/ArrayList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1474569855 /home/mhcrnl/Desktop/Year2016/October/CLibrary/MyArrayList01/ArrayList.h
+
