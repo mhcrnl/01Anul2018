@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1473783389 source:/home/mhcrnl/Desktop/Year2016/September/FileEx/FileEx1/fileEx1.c
+
+1473784177 source:/home/mhcrnl/Desktop/Year2016/September/FileEx/FileEx1/main.c
+	<stdio.h>
+	<stdlib.h>
+	"fileEx1.h"
+
+1473785265 /home/mhcrnl/Desktop/Year2016/September/FileEx/FileEx1/fileEx1.h
+	<stdio.h>
+	<stdlib.h>
+	<errno.h>
+	<string.h>
+

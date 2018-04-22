@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1472883503 source:/home/mhcrnl/Documents/Year2016/September/Saturday03/BoostEx/main.cpp
+	<boost/lambda/lambda.hpp>
+	<iostream>
+	<iterator>
+	<algorithm>
+

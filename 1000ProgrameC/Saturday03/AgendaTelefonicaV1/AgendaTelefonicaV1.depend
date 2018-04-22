@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1472920886 source:/home/mhcrnl/Documents/Year2016/September/Saturday03/AgendaTelefonicaV1/agendatelefonica.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"agendatelefonica.h"
+
+1472920886 /home/mhcrnl/Documents/Year2016/September/Saturday03/AgendaTelefonicaV1/agendatelefonica.h
+
+1472919143 source:/home/mhcrnl/Documents/Year2016/September/Saturday03/AgendaTelefonicaV1/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"agendatelefonica.h"
+

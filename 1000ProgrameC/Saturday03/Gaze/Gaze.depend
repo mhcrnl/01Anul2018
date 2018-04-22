@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1472893316 source:/home/mhcrnl/Documents/Year2016/September/Saturday03/Gaze/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

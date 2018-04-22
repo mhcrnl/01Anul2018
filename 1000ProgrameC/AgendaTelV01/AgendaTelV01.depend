@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1474095860 source:/home/mhcrnl/Desktop/Year2016/September/AgendaTelV01/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"contact.h"
+
+1474096045 /home/mhcrnl/Desktop/Year2016/September/AgendaTelV01/contact.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1474095589 source:/home/mhcrnl/Desktop/Year2016/September/AgendaTelV01/agenda.c
+	"contact.h"
+
