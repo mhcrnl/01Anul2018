@@ -1,0 +1,230 @@
+
+What happens when you attempt to compile and run the following code?
+
+    #include <iostream>
+    using namespace std;
+   
+    int main() {
+        char   t[3][3], *p = (char *)t;
+       
+        for(int i = 0; i < 9; i++)
+            *p++ = 'a' + i;
+        cout << t[1][1];
+        return 0;
+    }
+   
+ 
+Select correct answer (single choice)
+Compilation fails
+It prints e
+It prints g
+It prints c
+
+What happens when you attempt to compile and run the following code?
+
+    #include <iostream>
+    using namespace std;
+   
+    int main() {
+        short s = 1;
+        int i = 2;
+        long l = 3;
+        float f = 4.4;
+        double d = 6.6;
+       
+        cout << s/float(i) + int(f)/i + long(d)/s;
+        return 0;
+    }
+   
+ 
+
+Select correct answer (single choice)
+It prints 8.0
+It prints 8.5
+Compilation fails
+It prints 8.8
+
+What happens when you attempt to compile and run the following code?
+
+    #include <iostream>
+    using namespace std;
+   
+    int main() {
+        int i = 2;
+        float f = 5.8;
+       
+        f = (int)f;
+        i = (float) i;
+        cout << f/i;
+        return 0;
+    }
+   
+ 
+
+Select correct answer (single choice)
+It prints 2.5
+It prints 2
+It prints 3
+Compilation fails
+
+What happens when you attempt to compile and run the following code?
+
+    #include <iostream>
+    #include <string>
+    using namespace std;
+   
+    int main() {
+        string s = "a";
+       
+        cout << s  << "b" + "c";
+        return 0;
+    }
+   
+ 
+
+Select correct answer (single choice)
+Compilation fails
+It prints ab
+It prints a
+It prints abc
+
+What happens when you attempt to compile and run the following code?
+
+    #include <iostream>
+    #include <string>
+    using namespace std;
+   
+    int main() {
+        string s = "a";
+       
+        cout << s + "b" + "c";
+        return 0;
+    }
+   
+ 
+
+Select correct answer (single choice)
+Compilation fails
+It prints a
+It prints abc
+It prints ab
+
+What happens when you attempt to compile and run the following code?
+
+    #include <iostream>
+    using namespace std;
+   
+    int main() {
+        string s1 = "Ab";
+        string s2 = "Abc";
+       
+        cout << s1.compare(s1);
+        return 0;
+    }
+   
+ 
+
+Select correct answer (single choice)
+Compilation fails
+It prints 1
+It prints -1
+It prints 0
+
+What happens when you attempt to compile and run the following code?
+
+    #include <iostream>
+    #include <string>
+    using namespace std;
+   
+    int main() {
+        string s = "0123456789";
+        cout << s.substr(3,7).substr(2).substr();
+        return 0;
+    }
+   
+ 
+
+Select correct answer (single choice)
+It prints 56789
+Compilation fails
+It prints 34567
+It prints an empty string
+
+What happens when you attempt to compile and run the following code?
+
+    #include <iostream>
+    #include <string>
+    using namespace std;
+   
+    int main() {
+        string s = "ABCDEF";
+        for(int i = 1; i < s.length(); i += 2)
+            s[i - 1] = s[i] + 'a' - 'A';
+        cout << s;
+        return 0;
+    }
+   
+ 
+
+Select correct answer (single choice)
+It prints bBdDfF
+It prints BBDDFF
+It prints aAcCeE
+Compilation fails
+
+What happens when you attempt to compile and run the following code?
+
+    #include <iostream>
+   
+    namespace SpaceA {
+        int A;
+    }
+   
+    namespace SpaceB {
+        int A;
+    }
+   
+    using namespace SpaceA, SpaceB;
+   
+    int main() {
+        SpaceA::A = SpaceB::A = 1;
+        std::cout << A + 1;
+        return 0;
+    }
+   
+ 
+
+Select correct answer (single choice)
+It prints 0
+Compilation fails
+It prints 2
+It prints 1
+
+What happens when you attempt to compile and run the following code?
+
+    #include <iostream>
+    using namespace std;
+   
+    namespace S {
+    int A = 1;
+    }
+   
+    namespace S {
+    int B = A + 2 ;
+    }
+   
+    int main(void) {
+        S::A = S::A + 1;
+        { using namespace S;
+           ++B;
+        }
+        cout << S::B << S::A;
+        return 0;
+    }
+ 
+
+Select correct answer (single choice)
+It prints 42
+Compilation fails
+It prints 32
+It prints 22
