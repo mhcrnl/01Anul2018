@@ -1,0 +1,762 @@
+
+Which of the following strings is a proper integer number (in the "C" language sense)?
+Select correct answer (single choice)
+3.141592
+3_141_592
+3141592
+3,141592
+
+What is the value of the following integer literal?
+
+    012
+ 
+Select correct answer (single choice)
+12
+the literal is invalid
+18
+10
+
+What is the value of the following integer literal?
+
+    0x12
+ 
+
+Select correct answer (single choice)
+12
+18
+10
+the literal is invalid
+
+Which of the following strings is a valid variable name?
+Select correct answer (single choice)
+Alpha-Omega
+Alpha:Omega
+none of these
+Alpha@Omega
+
+Which of the following strings is an invalid variable name?
+Select correct answer (single choice)
+R2D2
+_2R2D_
+_R2D2_
+2R2D
+
+Which of the following declarations is valid?
+Select correct answer (single choice)
+int int;
+int long;
+int longint;
+int float;
+
+What is the value of the X variable at the end of the following snippet?
+    int X = 1;
+   
+    X = X + 2 * X;
+    X = X / 2 * X;
+    X = X + 2 + X;
+
+Select correct answer (single choice)
+4
+8
+1
+2
+
+What is the value of the X variable at the end of the following snippet?
+    int X = 1;
+   
+    X = X * X + 2;
+    X = X / X * 2;
+    X = X + 2 + X;
+
+Select correct answer (single choice)
+2
+6
+8
+4
+
+Which of the following strings is a proper floating-point number (in the "C" language sense)?
+Select correct answer (single choice)
+3.1415M92
+3.1415X92
+3.1415E92
+3.1415F92
+
+What is the value of the following floating-point literal?
+    -1E-1
+
+Select correct answer (single choice)
+-0.1
+the literal is invalid
+-1.0
+-0.01
+
+What is the value of the X variable at the end of the following snippet?
+    int X = 1, Y = 2, Z;
+   
+    Z = X / Y * --X * Y++;
+
+Select correct answer (single choice)
+1
+2
+4
+0
+
+What is the value of the X variable at the end of the following snippet?
+    int X;
+   
+    X = 'b' - 'a' * ('\' / '\');
+
+Select correct answer (single choice)
+2
+1
+0
+the snippet is invalid and will cause compilation error
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int a = -1, b = 1;
+        float i = 2.0, j = -2.0;
+        printf("%d\n", (a > b) + (b > a) + (i > j) + (j > i) + ('z' > 'a'));
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2
+the program outputs 3
+the program outputs 4
+the program outputs 1
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int i = 0;
+        if(i = 1)
+                i = 2;
+        else
+                i = 3;
+        printf("%d\n",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2
+the program outputs 4
+the program outputs 3
+the program outputs 1
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        float x = 3.0, y = 2.0;
+        int i = 1, j = 2;
+        x = (int)x / y + (float)i / j;
+        printf("%f",x);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 0.000000
+the program outputs 2.000000
+the program outputs 1.000000
+the program outputs 3.000000
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int i = 16, j = 8;
+        do {
+                i /= 2;
+                j -= i / 2;
+        } while(j > 0);
+        printf("%d",i + j);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 4
+the program outputs 1
+the program outputs 2
+the program enters an infinite loop and outputs nothing
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int i = 16, j = 6;
+        while(j > 0) {
+                i /= 2;
+                j -= i / 2;
+        }
+        printf("%d",i + j);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 1
+the program outputs 2
+the program outputs 4
+the program enters an infinite loop and outputs nothing
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int i = 2, j;
+        for(j = 0; j < 0; j -= i)
+                i /= 2;
+        printf("%d",i + j);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program enters an infinite loop and outputs nothing
+the program outputs 4
+the program outputs 1
+the program outputs 2
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int i = 5, j = 4;
+        for(i--; i--; i--)
+                j--;
+        printf("%d",i + j);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 4
+the program outputs 1
+the program outputs 2
+the program enters an infinite loop and outputs nothing
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int i = 1, j = 0, k;
+        k = (i & j) + (i | j) + (i ^ j) + !i + j;
+        printf("%d", k);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2
+the program outputs 4
+the program outputs 0
+the program outputs 1
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int i = 1, j = 0, k;
+        k = (i << j) + (j << i) + (i << i) + (j << j);
+        k >>= i;
+        printf("%d", k);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 4
+the program outputs 0
+the program outputs 1
+the program outputs 2
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int i = 1, j = i + 2 * i;
+        switch(j - i) {
+                case  1: j++;
+                case  2: j--;
+                case  0: j++; break;
+                default: j = 0;
+        }
+        printf("%d", ++j);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 1
+the program outputs 4
+the program outputs 0
+the program outputs 2
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int i = 1, j = i + 2 * i;
+        switch(j) {
+                default: j = 0;
+                case  1: j++; break;
+                case  2: j--;
+                case  0: j++; break;
+        }
+        printf("%d", ++j);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 1
+the program outputs 4
+the program outputs 0
+the program outputs 2
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int i, t[4];
+        for(i = 0; i < 3; i++) {
+                t[i] = i;
+                t[i + 1] = 2 * t[i];
+        }
+        printf("%d\n", t[3]);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 1
+the program outputs 2
+the program outputs 0
+the program outputs 4
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int i, t[4];
+        for(i = 3; i; i--) {
+                t[i] = i - 1;
+                t[t[i]] = t[i];
+        }
+        printf("%d\n", t[0]);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2
+the program outputs 1
+the program outputs 0
+the program outputs 4
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int i, s = 0, t[] = {0, 1, 2, 4, 8, 16};
+        for(i = 2; t[i] < 8; i *= 2)
+                s += t[i];
+        printf("%d\n", s);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 4
+the program outputs 2
+the program outputs 0
+the program outputs 1
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        char t[] = { 'a', 'z', 'B', 'Z', '0' };
+        printf("%d\n", t[t[1] - t[0] - t[3] + t[2] + 3] - t[4]);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 0
+the program outputs 1
+the program outputs 2
+the program outputs 4
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        char a = 'A', *b = &a, **c = &b;
+        **c = a + (a == *b);
+        printf("%c", a);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs A
+the program outputs NULL
+the program outputs B
+the program outputs C
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int t[4][4];
+        printf("%d\n",sizeof(t) / sizeof(t[0]) / sizeof(t[0][0]));
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 4
+the program outputs 1
+the program outputs 2
+the program outputs 8
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int t[4] = { 0, -1, -2, -3 }, *p = t + 3;
+        printf("%d\n", p[*p] - t[2]);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 8
+the program outputs 1
+the program outputs 4
+the program outputs 2
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        char *p = "\0\4\1\3\2";
+        printf("%d\n", p[p[1]] + *(p + 1) + p[4]);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 4
+the program outputs 2
+the program outputs 8
+the program outputs 1
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    #include <string.h>
+    int main(void) {
+        char tt[20] = "0123456789";
+        strcpy(tt, tt + 2);
+        printf("%d\n", strlen(tt) - tt[9] + '5');
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 8
+the program outputs 2
+the program outputs 4
+the program outputs 1
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    #include <string.h>
+    int main(void) {
+        char tt[20] = "0123456789";
+        strcat(tt + 2, "987");
+        printf("%d\n", strlen(tt) - tt[5] + '0');
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 8
+the program outputs 1
+the program outputs 2
+the program outputs 4
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    #include <stdlib.h>
+    int main(void) {
+        int *t = (int *) malloc(sizeof(int) + sizeof(int));
+        t++;
+        *t = 8;
+        t[-1] = *t / 2;
+        t--;
+        t[1] = *t / 2;
+        printf("%d\n",*t);
+        free(t);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 8
+the program outputs 4
+the program outputs 2
+the program outputs 1
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        char  *t1 [10];
+        char (*t2)[10];
+        printf("%d",(sizeof(t1) == sizeof(t2)) + sizeof(t1[0]));
+        return 0;
+    }
+     
+
+Select correct answer (single choice)
+the program outputs 4
+the program outputs 2
+the program outputs 8
+the program outputs 1
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    #include <string.h>
+    struct S {
+        char S[4];
+    };
+    int main(void) {
+        struct S S = { 'a', 'b' };
+        printf("%d", sizeof(S.S) - strlen(S.S) + S.S[3]);
+        return 0;
+    }
+   
+
+Select correct answer (single choice)
+the program outputs 2
+the program outputs 1
+the program outputs 4
+the program outputs 8
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    #include <string.h>
+    #include <stdlib.h>
+    struct S {
+        char *S;
+    };
+   
+    int main(void) {
+        struct S *S = (struct S *) malloc(sizeof(struct S));
+        S -> S = "abc";
+        printf("%d", strlen(S -> S + 2) + S -> S[3]);
+        free(S);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 1
+the program outputs 2
+the program outputs 4
+the program outputs 8
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    struct S {
+        int Var;
+        struct S *Str;
+    };
+    int main(void) {
+        struct S S[] = { { 8, NULL }, { 4, &S[0] }, { 2, &S[1] } };
+        printf("%d", S[2].Str->Str->Var);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 4
+the program outputs 1
+the program outputs 2
+the program outputs 8
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int fun(int *t) {
+        return *(++t);
+    }
+    int main(void) {
+        int arr[] = { 8, 4, 2, 1 };
+        printf("%d\n", fun(arr + 2));
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 1
+the program outputs 8
+the program outputs 2
+the program outputs 4
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int fun(int t) {
+        return ++t;
+    }
+    int main(void) {
+        int arr[] = { 8, 4, 2, 1 };
+        printf("%d\n", fun(arr[3]) + arr[2]);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2
+the program outputs 1
+the program outputs 4
+the program outputs 8
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int f(int v) {
+                v = 2 * v;
+        return v * v;
+    }
+    int main(void) {
+        int i = 2;
+        f(i);
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 8
+the program outputs 2
+the program outputs 4
+the program outputs 1
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    char *f(char *p) {
+        return p++;
+    }
+    char *g(char *p) {
+        return p += 2;
+    }
+    int main(void) {
+        char *s = "ABCDEFGHIJ";
+        char  p = *f(g(f(s + 6)));
+        printf("%d",p - 'A');
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 4
+the program outputs 2
+the program outputs 1
+the program outputs 8
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    struct S {
+        int S[2];
+    };
+    void f(struct S S) {
+        S.S[0] = S.S[1] + 4;
+    }
+    int main(void) {
+        struct S S = { { 4, 8 } };
+        f(S);
+        printf("%d",S.S[1] / S.S[0]);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2
+the program outputs 1
+the program outputs 4
+the program outputs 8
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    struct S {
+        int S[2];
+    };
+    void f(struct S *S) {
+        S->S[1] = S->S[0] + 2;
+    }
+    int main(void) {
+        struct S S = { { 4, 8 } }, *P = &S;
+        f(P);
+        printf("%d",S.S[1] / S.S[0]);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 8
+the program outputs 2
+the program outputs 4
+the program outputs 1
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int f(int t[][2]) {
+        return t[0][0] + t[0][1];
+    }
+    int main(void) {
+        int i,t[2][2] = { {0,4},{4,2} };
+        i = f(t);
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 1
+the program outputs 2
+the program outputs 8
+the program outputs 4
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    #include <string.h>
+    char *f(int p, char *s) {
+        s[p + 1] = '\0';
+        return s + 1;
+    }
+    int main(void) {
+        char s[] = "ABCDEF";
+        int i = strlen(f(1,s + 2));
+        printf("%d\n",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 1
+the program outputs 2
+the program outputs 8
+the program outputs 4
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        char s[20];
+        FILE *f = fopen("data","w");
+        int i = fputs("1248",f);
+        fclose(f);
+        f = fopen("data","r");
+        fgets(s + 2,4,f);
+        putchar(s[4]);
+        fclose(f);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2
+the program outputs 1
+the program outputs 8
+the program outputs 4
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    #define  ABC    10
+    #define  XYZ         ABC - 1
+    int main(void) {
+        int i = 19;
+        i = i - XYZ;
+        printf("%d\n", i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 1
+the program outputs 2
+the program outputs 8
+the program outputs 4
+
+What is the meaning of the following declaration?
+    void (*f)(int);
+
+Choose the right answers:
+Select correct answer (single choice)
+f is a pointer to function (int) returning void;
+f is a function (int) returning pointer to void;
+the declaration is erronous
+f is a pointer to function (int) returning int;
+
+Select the proper form for the following declaration:
+ptr is a pointer to pointer to void
+Choose the right answers:
+Select correct answer (single choice)
+void ptr;
+void **ptr;
+the declaration is invalid and cannot be coded in C
+void *ptr;

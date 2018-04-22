@@ -1,0 +1,373 @@
+
+What happens if you try to compile and run this program?
+    void f(void) {
+    }
+    int main(void) {
+        int i;
+        i = f();
+        printf("%d",i);
+        return 0;
+    }
+Select correct answer (single choice)
+the program outputs nul
+the program outputs 0
+compilation fails
+the program outputs NULL
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int f(void) {
+    }
+    int main(void) {
+        int i;
+        i = f();
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 0
+the compilation fails
+the program outputs an unpredictable value
+the program outputs NULL
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    void f(int i) {
+        i++;
+    }
+    int main(void) {
+        int i = 1;
+        f(i);
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs an unpredictable value
+the compilation fails
+the program outputs 1
+the program outputs 2
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int f(int i) {
+        return ++i;
+    }
+    int main(void) {
+        int i = 1;
+        i = f(i);
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2
+the compilation fails
+the program outputs 1
+the program outputs an unpredictable value
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int f(int i) {
+        return ++i;
+    }
+    int main(void) {
+        int i = 0;
+        i = f(f(i));
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2
+the program outputs 0
+the program outputs 1
+the compilation fails
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int i = 0;
+        {
+                int i = 1;
+                main.i = i;
+        }
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 1
+compilations fails
+the program outputs 2
+the program outputs 0
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int i = 0;
+    void f(void) {
+        int i = 1;
+    }
+    int main(void) {
+        int i = 2;
+        f();
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 0
+the program outputs 2
+the compilation fails
+the program outputs 1
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int i = 0;
+    void f(void) {
+        int i = 1;
+    }
+    int main(void) {
+        f();
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 0
+the compilation fails
+the program outputs 1
+the program outputs 2
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int i = 1;
+    int *f(void) {
+        return &i;
+    }
+    int main(void) {
+        int i = 0;
+        i = *f();
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2
+the program outputs 0
+the program outputs 1
+the compilation fails
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int i = 2;
+    int *f(void) {
+        return &i;
+    }
+    int main(void) {
+        int *i;
+        i = f();
+        printf("%d",++(*i));
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2
+the program outputs 1
+the program outputs 3
+the compilation fails
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int i = 0;
+    int *f(int *i) {
+        (*i)++;
+        return i;
+    }
+    int main(void) {
+        int i = 1;
+        i = *f(&i);
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the compilation fails
+the program outputs 1
+the program outputs 0
+the program outputs 2
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    struct S {
+        int S;
+    };
+    int f(struct S s) {
+        return --s.S;
+    }
+    int main(void) {
+        int i;
+        struct S S = { 2 };
+        i = f(S);
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 1
+the program outputs 0
+the program outputs 2
+the compilation fails
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    struct S {
+        int S;
+    };
+    int f(struct S *s) {
+        return --s.S;
+    }
+    int main(void) {
+        int i;
+        struct S S = { 2 };
+        i = f(S);
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+compilation fails
+the program outputs 2
+the program outputs 1
+the program outputs 0
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int f(int t[]) {
+        return t[0] + t[2];
+    }
+    int main(void) {
+        int i,a[] = { -2,-1,0,1,2 };
+        i = f(a + 2);
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2
+the program outputs 0
+the program outputs 1
+the compilation fails
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int f(int t[][]) {
+        return t[0][0] + t[1][0];
+    }
+    int main(void) {
+        int i,a[2][2] = { {-2,-1},{1,2} };
+        i = f(a + 2);
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2
+compilation fails
+the program outputs 1
+the program outputs 0
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int f(int t[2][]) {
+        return t[0][0] + t[1][0];
+    }
+    int main(void) {
+        int i,a[2][2] = { {-2,-1},{1,2} };
+        i = f(a + 2);
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2
+the program outputs 0
+compilation fails
+the program outputs 1
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int f(char t[]) {
+        return t[1] - t[0];
+    }
+    int main(void) {
+        int i = 2;
+        i -= f("ABDGK" + 1);
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 0
+the program outputs 1
+the program outputs 2
+the compilation fails
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int f(char t[]) {
+        return t[0] - t[-1];
+    }
+    int main(void) {
+        int i = 2;
+        i -= f("ABDGK" + 1);
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the compilation fails
+the program outputs 2
+the program outputs 0
+the program outputs 1
+
+What happens if you try to compile and run this program?
+
+    #include <stdio.h>
+    #include <string.h>
+    void f(char *s,int i) {
+        *(s + i) = '\0';
+    }
+    int main(void) {
+        char a[] = { 'a','b','c','d' };
+        f(*a[1],1);
+        printf("%d",strlen(a));
+        return 0;
+    }
+ 
+
+Select correct answer (single choice)
+the program outputs 2
+the program outputs 1
+compilation fails
+the program outputs 0
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    #include <string.h>
+    void f(char *s,int i) {
+        *(s + i) = '\0';
+    }
+    int main(void) {
+        char a[] = { 'a','b','c','d' };
+        f(a+1,1);
+        printf("%d",strlen(a));
+        return 0;
+    }
+
+Select correct answer (single choice)
+the compilation fails
+the program outputs 1
+the program outputs 2
+the program outputs 0 

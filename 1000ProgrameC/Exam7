@@ -1,0 +1,310 @@
+
+The following string is a valid file name in:
+    JohnDoe
+Select correct answers (multiple choice)
+Unix/Linux systems
+MS Windows systems
+
+Unix/Linux systems treat the following names as:
+    JohnDoe
+    johndoe
+
+Select correct answer (single choice)
+identical file names
+different file names
+
+The following string is a valid file name in:
+    HomeDir/HomeFile
+
+Select correct answer (single choice)
+MS Windows systems
+Unix/Linux systems
+
+The following string is a valid file name in:
+    D:\USERDIR\johndoe.txt
+
+Select correct answer (single choice)
+Unix/Linux systems
+MS Windows systems
+
+What happens if you try to compile and run this program?
+    int main(void) {
+        FILE *f;
+        f = fopen("file","wb");
+        printf("%d",f != NULL);
+        fclose(f);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the compilation fails
+the program outputs 0
+the program outputs 1
+the execution fails
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        FILE f;
+        f = fopen("file","wb");
+        printf("%d",f != NULL);
+        fclose(f);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 0
+the program outputs 1
+the execution fails
+the compilation fails
+
+What happens if you try to compile and run this program assuming that the fopen() succeeds?
+    #include <stdio.h>
+    int main(void) {
+        FILE *f;
+        f = fopen("file","wb");
+        printf("%d",f != NULL);
+        fclose(f);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 0
+the compilation or the execution fails
+the program outputs 1
+the program outputs 2
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int i;
+        i = fprintf(stdin,"Hello!");
+        printf("%d",i == EOF);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the compilation or the execution fails
+the program outputs 0
+the program outputs 2
+the program outputs 1
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        int i;
+        i = fprintf(stderr,"Hello!");
+        printf("%d",i == EOF);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2 to the stdout strem
+the compilation or the execution fails
+the program outputs 0 to the stdout strem
+the program outputs 1 to the stdout strem
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        FILE *f;
+        int i = fprintf(f,"Hello!");
+        printf("%d",i == EOF);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2
+the program outputs 1
+the compilation or the execution fails
+the program outputs 0
+
+What happens if you try to compile and run this program assuming that the fopen() succeeds?
+    #include <stdio.h>
+    int main(void) {
+        FILE *f = fopen("file","w");
+        int i = fprintf(f,"Hello!");
+        printf("%d",i != EOF);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 1
+the program outputs 2
+the program outputs 0
+the compilation or the execution fails
+
+What happens if you try to compile and run this program assuming that the fopen() succeeds?
+    #include <stdio.h>
+    int main(void) {
+        FILE *f = fopen("file","w");
+        int i = fputs(f,"Hello!");
+        printf("%d",i != EOF);
+        fclose(f);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the compilation or the execution fails
+the program outputs 1
+the program outputs 0
+the program outputs 2
+
+What happens if you try to compile and run this program assuming that the fopen() succeeds?
+    #include <stdio.h>
+    int main(void) {
+        FILE *f = fopen("file","w");
+        int i = fputs("Hello!",f);
+        printf("%d",i != EOF);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 2
+the compilation or the execution fails
+the program outputs 0
+the program outputs 1
+
+What happens if you try to compile and run this program assuming that the fopen() succeeds?
+    #include <stdio.h>
+    int main(void) {
+        char s[20];
+        FILE *f = fopen("file","w");
+        int i = fputs("12A",f);
+        fclose(f);
+        f = fopen("file","r");
+        fgets(s,2,f);
+        puts(s);
+        fclose(f);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the compilation or the execution fails
+the program outputs 1
+the program outputs 12
+the program outputs 12A
+
+What happens if you try to compile and run this program assuming that the fopen() succeeds?
+    #include <stdio.h>
+    int main(void) {
+        char s[20];
+        FILE *f = fopen("file","w");
+        int i = fputs("12A",f);
+        fclose(f);
+        f = fopen("file","r");
+        fgets(s,20,f);
+        puts(s);
+        fclose(f);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 1
+the compilation or the execution fails
+the program outputs 12
+the program outputs 12A
+
+What happens if you try to compile and run this program assuming that the fopen() succeeds?
+    #include <stdio.h>
+    int main(void) {
+        FILE *f = fopen("file","w");
+        int i;
+        fputs("12A",f);
+        fclose(f);
+        f = fopen("file","r");
+        fseek(f,0,SEEK_END);
+        i = ftell(f);
+        fclose(f);
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 1
+the program outputs 2
+the compilation or the execution fails
+the program outputs 3
+
+What happens if you try to compile and run this program assuming that the fopen() succeeds?
+
+    #include <stdio.h>
+    int main(void) {
+        FILE *f = fopen("file","w");
+        int i;
+        fputs("12A",f);
+        fclose(f);
+        f = fopen("file","r");
+        fseek(f);
+        i = ftell(f,0,SEEK_END);
+        fclose(f);
+        printf("%d",i);
+        return 0;
+    }
+ 
+
+Select correct answer (single choice)
+the compilation or the execution fails
+the program outputs 1
+the program outputs 2
+the program outputs 3
+
+What happens if you try to compile and run this program assuming that the fopen() succeeds?
+    #include <stdio.h>
+    int main(void) {
+        FILE *f = fopen("file","w");
+        int i;
+        fputs("12A",f);
+        fclose(f);
+        f = fopen("file","r");
+        fscanf(f,"%d",&i);
+        fclose(f);
+        printf("%d",i);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 12A
+the program outputs 12
+the compilation or the execution fails
+the program outputs 1
+
+What happens if you try to compile and run this program assuming that the fopen() succeeds?
+    #include <stdio.h>
+    int main(void) {
+        FILE *f = fopen("file","w");
+        char c;
+        fputs("12A",f);
+        fclose(f);
+        f = fopen("file","r");
+        fscanf(f,"%c",&c);
+        fclose(f);
+        printf("%c",c);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 12A
+the program outputs 1
+the compilation or the execution fails
+the program outputs 12
+
+What happens if you try to compile and run this program?
+    #include <stdio.h>
+    int main(void) {
+        FILE *f = fopen("file","w");
+        float f;
+        fputs("12A",f);
+        fclose(f);
+        f = fopen("file","r");
+        fscanf(f,"%f",&f);
+        fclose(f);
+        printf("%f",f);
+        return 0;
+    }
+
+Select correct answer (single choice)
+the program outputs 0.000000
+the compilation or the execution fails
+the program outputs 12.0000000
+the program outputs 1.000000
