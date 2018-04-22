@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1476633492 source:/home/mhcrnl/Desktop/Year2016/October/ncursesTest/main.c
+	<stdio.h>
+	<allegro5/allegro.h>
+

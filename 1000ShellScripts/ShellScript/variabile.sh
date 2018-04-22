@@ -1,0 +1,63 @@
+#!/bin/bash
+
+#utilizarea variabilelor in programul hello
+STR="########SALUT! Acest program va salva un fisier?"
+echo $STR
+
+#Script simplu pt backup
+OF=/my-backup-$(date +%Y%m%d).tgz
+tar -cZf $OF /GitFolder/
+
+echo "Variabile locale vs globale" 
+HELLO=hello
+function hello {
+	local HELLO=World
+	echo $HELLO
+}
+echo $HELLO
+hello
+echo $HELLO
+echo ################################# if..then
+echo "Conditia if..then "
+if [ "foo" = "foo" ]; then
+	echo Expresia este evaluata ca adevarata
+fi
+echo ##################################if..then...else
+if [ "foo" = "foo" ]; then
+	echo Expresia este adavarata
+else
+	echo Expresia este falsa
+fi
+echo ###############################Conditie cu variabile
+T1="foo"
+T2="bar"
+if [ "$T1" = "$T2" ]; then 
+	echo Expresie este adevarata
+else 
+	echo Expresie evaluata ca falsa
+fi
+echo 000000000000000000000000000000000000000000000000
+echo "Aici vor fi afisate fisierele din acest folder"
+for i in $( ls); do
+	echo item: $i
+done
+echo 11111111111111111111111111111111111111111111111111
+echo "Acesta este un for asemanator cu cel din C"
+for i in `seq 1 10`;
+do
+	echo $i
+done
+echo 22222222222222222222222222222222222222222222222222
+echo While exemplul:
+COUNTER=0
+while [ $COUNTER -lt 10 ]; do
+	echo Contorul este $COUNTER
+	let COUNTER=COUNTER+1
+done
+echo 333333333333333333333333333333333333333333333333333333333
+echo Until exemplu
+COUNTER=20
+until [ $COUNTER -lt 10 ]; do
+	echo COUNTER $COUNTER
+	let COUNTER-=1
+done

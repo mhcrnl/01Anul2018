@@ -1,0 +1,12 @@
+total 36
+-rwxrwxr-x 1 mhcrnl mhcrnl   93 oct 13 20:35 fisiere.sh
+-rw-rw-r-- 1 mhcrnl mhcrnl    0 oct 13 20:36 fisierulCuDatels.txt
+drwxrwxr-x 2 mhcrnl mhcrnl 4096 oct 13 20:12 GitFolder
+-rwxrwxr-x 1 mhcrnl mhcrnl  165 oct 13 20:10 gitpull.sh
+-rwxrwxr-x 1 mhcrnl mhcrnl 1121 oct 13 19:55 pdfChek.sh
+-rwx--x--x 1 mhcrnl mhcrnl   54 oct 13 19:32 shellscript.sh
+-rwxrwxr-x 1 mhcrnl mhcrnl  111 oct 13 20:31 tarfile.sh
+-rwxrwxr-x 1 mhcrnl mhcrnl  110 oct 13 20:30 tarfile.sh~
+-rw-rw-r-- 1 mhcrnl mhcrnl    0 oct 13 19:55 Untitled Document~
+-rwxrwxr-x 1 mhcrnl mhcrnl  470 oct 13 20:01 updateGit.sh
+-rwxrwxr-x 1 mhcrnl mhcrnl  469 oct 13 20:00 updateGit.sh~
